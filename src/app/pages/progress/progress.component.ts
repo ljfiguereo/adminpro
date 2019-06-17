@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-progress',
   templateUrl: './progress.component.html',
-  styles: []
+  styles: [],
 })
-export class ProgressComponent implements OnInit {
+export class ProgressComponent {
+  // tslint:disable-next-line: no-trailing-whitespace
 
-  constructor() { }
+  progreso1: number = 10;
+  progreso2: number = 20;
 
-  ngOnInit() {
+  constructor() {}
+
+  actualizar(event: number) {
+    console.log('Evento', event);
   }
-
 }
